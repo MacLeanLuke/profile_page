@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <!-- <div class="flex-container"> -->
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="left-navigation">
+          <h1>Luke MacLean</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+          </ul>
+        </div>
+        <button>Sign Out</button>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="profile-column">
+          <!-- user info card -->
+          <div class="card user">
+            <div class="card-header">
+              <img
+                src="./assets/images/luke.jpg"
+                alt="luke-profile"
+                class="avatar-m"
+              />
+            </div>
+            <div class="card-body">
+              <h1>Luke MacLean</h1>
+              <h3>
+                <img
+                  src="./assets/icons/map-marker.png"
+                  alt="pin"
+                  class="icon-s"
+                />
+                Dallas
+              </h3>
+              <p>
+                Developer | Engineer | Problem Solver<br />
+                Master of shadows and the Internet!
+              </p>
+              <p>
+                <a href="#">
+                  <img
+                    src="./assets/icons/gear.png"
+                    alt="gear"
+                    class="icon-s"
+                  />
+                  edit profile
+                </a>
+              </p>
+            </div>
+          </div>
+          <!-- education info card -->
+          <div class="card utility">
+            <div class="card-header">
+              <h3>Education</h3>
+            </div>
+            <div class="card-body">
+              <h4>Coding Dojo - Full Stack Bootcamp</h4>
+              <h5>June 2021 - August 2021</h5>
+              <p>Triple Black Belt in Python, Ruby and MEAN.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Connection Flex Column -->
+        <div class="connection-column">
+          <!-- Connection Request Card -->
+          <div class="card utility  request">
+            <div class="card-header">
+              <button><h2>2</h2></button>
+              <h3>Connection Requests</h3>
+            </div>
+            <div class="card-body">
+              <h4 id="request">
+                <div class="profile">
+                  <img src="./assets/images/adrien-s.jpg" alt="adrien-s" />
+                  Adrien
+                </div>
+                <div class="request">
+                  <img
+                    src="./assets/icons/accept-circle.png"
+                    alt="accept-circle"
+                  />
+                  <img
+                    src="./assets/icons/close-circle.png"
+                    alt="close-circle"
+                  />
+                </div>
+              </h4>
+              <h4 id="request">
+                <div class="profile">
+                  <img src="./assets/images/alayne-s.jpg" alt="alayne-s" />
+                  Alayne
+                </div>
+                <div class="request">
+                  <img
+                    src="./assets/icons/accept-circle.png"
+                    alt="accept-circle"
+                  />
+                  <img
+                    src="./assets/icons/close-circle.png"
+                    alt="close-circle"
+                  />
+                </div>
+              </h4>
+            </div>
+          </div>
+          <!-- Your Connections Card -->
+          <div class="card utility connection">
+            <div class="card-header">
+              <button><h2>500+</h2></button>
+              <h3>Your Connections</h3>
+            </div>
+            <div class="card-body">
+              <h4 id="request">
+                <div class="profile">
+                  <img src="./assets/images/anne-s.jpg" alt="anne-s" />
+                  Anne
+                </div>
+              </h4>
+              <h4 id="request">
+                <div class="profile">
+                  <img src="./assets/images/arry-s.jpg" alt="arry-s" />
+                  Arry
+                </div>
+              </h4>
+              <h4 id="request">
+                <div class="profile">
+                  <img src="./assets/images/jane-m.jpg" alt="jane-m" />
+                  Jane
+                </div>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- </div> -->
+  </body>
+</html>
