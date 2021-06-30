@@ -37,7 +37,7 @@
               />
             </div>
             <div class="card-body">
-              <h1>Luke MacLean</h1>
+              <h1 id="profileName">Luke MacLean</h1>
               <h3>
                 <img
                   src="./assets/icons/map-marker.png"
@@ -51,13 +51,12 @@
                 Master of shadows and the Internet!
               </p>
               <p>
-                <a href="#">
+                <a href="#" onclick="editName()">
                   <img
                     src="./assets/icons/gear.png"
                     alt="gear"
                     class="icon-s"
-                  />
-                  edit profile
+                  />edit profile
                 </a>
               </p>
             </div>
@@ -77,13 +76,13 @@
         <!-- Connection Flex Column -->
         <div class="connection-column">
           <!-- Connection Request Card -->
-          <div class="card utility  request">
+          <div class="card utility request">
             <div class="card-header">
-              <button><h2>2</h2></button>
+              <button><h2 id="totalRequestNumber">2</h2></button>
               <h3>Connection Requests</h3>
             </div>
             <div class="card-body">
-              <h4 id="request">
+              <h4 id="requestAdrien">
                 <div class="profile">
                   <img src="./assets/images/adrien-s.jpg" alt="adrien-s" />
                   Adrien
@@ -92,14 +91,16 @@
                   <img
                     src="./assets/icons/accept-circle.png"
                     alt="accept-circle"
+                    onclick="removeRequest(requestAdrien);addConnection()"
                   />
                   <img
                     src="./assets/icons/close-circle.png"
                     alt="close-circle"
+                    onclick="removeRequest(requestAdrien)"
                   />
                 </div>
               </h4>
-              <h4 id="request">
+              <h4 id="requestAlayne">
                 <div class="profile">
                   <img src="./assets/images/alayne-s.jpg" alt="alayne-s" />
                   Alayne
@@ -108,10 +109,12 @@
                   <img
                     src="./assets/icons/accept-circle.png"
                     alt="accept-circle"
+                    onclick="removeRequest(requestAlayne);addConnection()"
                   />
                   <img
                     src="./assets/icons/close-circle.png"
                     alt="close-circle"
+                    onclick="removeRequest(requestAlayne)"
                   />
                 </div>
               </h4>
@@ -120,7 +123,7 @@
           <!-- Your Connections Card -->
           <div class="card utility connection">
             <div class="card-header">
-              <button><h2>500+</h2></button>
+              <button><h2 id="totalConnectionNumber">500</h2></button>
               <h3>Your Connections</h3>
             </div>
             <div class="card-body">
@@ -148,5 +151,6 @@
       </div>
     </main>
     <!-- </div> -->
+    <script src="code.js"></script>
   </body>
 </html>
